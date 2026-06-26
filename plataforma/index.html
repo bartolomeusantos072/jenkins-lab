@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Cadastro de Pessoas</h2>
+
+    <form action="processa.php" method="POST">
+
+        <input
+            type="text"
+            name="nome"
+            placeholder="Nome"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required>
+
+        <input
+            type="text"
+            name="telefone"
+            placeholder="Telefone">
+
+        <button type="submit">
+            Cadastrar
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

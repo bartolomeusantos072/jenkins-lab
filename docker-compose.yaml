@@ -1,0 +1,19 @@
+services:
+  app001:
+    
+    build: .
+    
+    container_name: app001
+    ports:
+      - "80:80"
+    
+    volumes:
+      - ./plataforma:/var/www/html/plataforma:ro
+    networks:
+      - rede-lab-teste-devops
+
+networks:
+
+  rede-lab-teste-devops:
+    
+    external: true
